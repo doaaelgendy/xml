@@ -1,0 +1,107 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/background"
+
+tools:context=".MainActivity">
+
+    <LinearLayout
+
+        style="@style/Style"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/Style_image"
+                android:background="@color/background_image"
+                android:src="@drawable/email" />
+
+            <EditText
+                android:layout_width="286dp"
+                 style="@style/Style_text"
+                android:layout_height="match_parent"
+                android:background="@color/background_edit_text"
+                android:text="@string/email_address"
+                android:textColor="@color/text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            >
+
+            <ImageView
+                style="@style/Style_image"
+                android:background="@color/background_image"
+                android:src="@drawable/key" />
+
+            <EditText
+                android:layout_width="115dp"
+                style="@style/Style_text"
+
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:background="@color/background_edit_text"
+                android:text="@string/password"
+                android:textColor="@color/text" />
+
+            <ImageView
+                style="@style/Style_image"
+                android:background="@color/background_image"
+                android:src="@drawable/lock" />
+
+            <EditText
+                android:layout_width="284dp"
+                android:layout_height="match_parent"
+                android:background="@color/background_edit_text"
+                style="@style/Style_text"
+                android:text="@string/again"
+                android:textColor="@color/text"
+                />
+
+        </LinearLayout>
+
+        <EditText
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/background_edit_text"
+            style="@style/Style_text"
+            android:text="@string/mobile_number"
+            android:textColor="@color/text"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background_image"
+            android:text="Continue"
+
+            android:textColor="@color/text"  />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/already_have_an_account_sign_in"
+        android:textColor="@color/text"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>
